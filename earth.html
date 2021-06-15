@@ -5,59 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/style.css">
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Earth
+<div id="header" >
+  <h3>The Planets</h3>
+  <div id="planet_names">
 
-  <!-- Overview Content Start -->
+  </div>
+</div>
+<div class="container">
+  <img src="assets/planet-earth.svg" alt="Earth" id='earth' class='planet_img' onmouseover="earthImg()" onmouseout="earthImgRevert()"/>
+  <div class="planet_info">
+        <h1>Earth</h1>
 
-  Third planet from the Sun and the only known planet to harbor life. 
-  About 29.2% of Earth's surface is land with remaining 70.8% is 
-  covered with water. Earth's distance from the Sun, physical properties 
-  and geological history have allowed life to evolve and thrive.
+        <!-- Overview Content Start -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+        <p>Third planet from the Sun and the only known planet to harbor life. 
+        About 29.2% of Earth's surface is land with remaining 70.8% is 
+        covered with water. Earth's distance from the Sun, physical properties 
+        and geological history have allowed life to evolve and thrive.</p>
 
-  <!-- Overview Content End -->
+        <p>Source : <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a></p> <!-- URL: https://en.wikipedia.org/wiki/Earth -->
 
-  <!-- Internal Structure Content Start -->
+        <!-- Overview Content End -->
 
-  Earth's interior, like that of the other terrestrial planets, is divided 
-  into layers by their chemical or physical (rheological) properties. The 
-  outer layer is a chemically distinct silicate solid crust, which is 
-  underlain by a highly viscous solid mantle.
+        <!-- Internal Structure Content Start -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+        <!-- Earth's interior, like that of the other terrestrial planets, is divided 
+        into layers by their chemical or physical (rheological) properties. The 
+        outer layer is a chemically distinct silicate solid crust, which is 
+        underlain by a highly viscous solid mantle.
 
-  <!-- Internal Structure Content End -->
+        Source : Wikipedia URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
 
-  <!-- Surface Geology Content Start -->
+        <!-- Internal Structure Content End -->
 
-  The total surface area of Earth is about 510 million km2. The continental 
-  crust consists of lower density material such as the igneous rocks granite 
-  and andesite. Less common is basalt, a denser volcanic rock that is the 
-  primary constituent of the ocean floors.
+        <!-- Surface Geology Content Start -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+        <!-- The total surface area of Earth is about 510 million km2. The continental 
+        crust consists of lower density material such as the igneous rocks granite 
+        and andesite. Less common is basalt, a denser volcanic rock that is the 
+        primary constituent of the ocean floors.
 
-  <!-- Surface Geology Content End -->
+        Source : Wikipedia URL: https://en.wikipedia.org/wiki/Earth#Surface -->
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+        <!-- Surface Geology Content End -->
+        <div class="buttons">
+          <p>01 Overview</p>
+          <p>02 Internal Structure</p>
+          <p>03 Surface Geology</p>
+        </div>
+  </div>
+  
+</div>
+<div class='footer'>
+    Rotation Time
+    0.99 Days
 
-  Rotation Time
-  0.99 Days
+    Revolution Time
+    365.26 Days
 
-  Revolution Time
-  365.26 Days
+    Radius
+    6,371 KM
 
-  Radius
-  6,371 KM
-
-  Average Temp.
-  16°c
+    Average Temp.
+    16°c
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

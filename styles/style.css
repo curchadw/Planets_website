@@ -1,0 +1,44 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ color: #ffffff
+}
+
+body{
+   background-color: rgb(21,22,41);
+
+}
+
+#header{
+ display: flex;
+ justify-content: space-between;
+ padding: 30px
+ 
+}
+
+#planet_names{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#planet_names > p{
+    margin: 0 40px
+}
+
+.container{
+    margin: 0 70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px
+}
+
+.planet_info, .planet_img{
+    margin: 0 100px;
+}
+
