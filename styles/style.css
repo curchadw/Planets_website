@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 *{
  box-sizing: border-box;
  margin: 0;
  padding: 0;
- color: #ffffff
+ color: #ffffff;
+ font-family: "Space Mono",sans-serif;
 }
 
 body{
@@ -41,11 +44,16 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 100px 100px 0 100px;
+    padding: 20px 100px 0 100px;
 }
 
 .planet_info, .planet_img{
     margin: 0 100px;
+}
+
+.paragraph{
+    font-size: large;
+    width: 500px
 }
 
 .footer{
@@ -53,7 +61,15 @@ body{
     display: flex;
     justify-content: space-around;
     padding: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
     
+}
+
+.url{
+    margin-bottom: 50px;
 }
 
 .stats{
@@ -63,13 +79,23 @@ body{
 }
 
 
-.buttons > p{
+.buttons > .information{
     background-color: blueviolet;
-    margin: 10px 0;
+    padding: 10px 0;
+    margin: 10px;
     text-align: center;
     font-size: larger;
-    height: 20px;
+    height: 50px;
     width: 300px;
+    cursor: pointer
     
 
+}
+
+#para2{
+    display: none;
+}
+
+#para3{
+    display: none;
 }
